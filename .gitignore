@@ -1,0 +1,52 @@
+# ── Claude Code: keep conversations & local config private ──────────────
+# Local Claude session data, transcripts, and machine-specific settings.
+.claude/
+CLAUDE.local.md
+
+# ── Secrets & credentials ───────────────────────────────────────────────
+# Drop keys, tokens, and credential files in secrets/ — it is never committed.
+secrets/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# ── Python ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+ENV/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Node / Frontend ─────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+
+# ── Docker ──────────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── OS / editor cruft ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
